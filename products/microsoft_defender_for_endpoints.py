@@ -11,6 +11,8 @@ from common import Product, Tag, Result
 PARAMETER_MAPPING: dict[str, dict[str, Union[str, list[str]]]] = {
     'process_name': {'table':'DeviceProcessEvents','field':'FolderPath',
                      'projections':['DeviceName','AccountName','FolderPath','ProcessCommandLine']},
+    'parent_name': {'table':'DeviceProcessEvents','field':'InitiatingFolderPath',
+                     'projections':['DeviceName','AccountName','FolderPath','ProcessCommandLine']},
     'filemod': {'table':'DeviceFileEvents','field':'FolderPath',
                 'projections':['DeviceName', 'InitiatingProcessAccountName','InitiatingProcessFolderPath','InitiatingProcessCommandLine']},
     'ipaddr': {'table':'DeviceNetworkEvents','field':'RemoteIP',
