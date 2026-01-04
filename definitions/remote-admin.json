@@ -1,4 +1,10 @@
 {
+  "Access Remote PC": {
+    "process_name": [
+      "rpcgrab.exe",
+      "rpcsetup.exe"
+    ]
+  },
   "Action1": {
     "digsig_publisher": [
       "Action1 Corporation"
@@ -33,6 +39,22 @@
       "AeroAdmin.exe"
     ]
   },
+  "AliWangWang-remote-control": {
+    "domain": [
+      "wangwang.taobao.com"
+    ],
+    "process_name": [
+      "alitask.exe"
+    ]
+  },
+  "Alpemix": {
+    "domain": [
+      "alpemix.com"
+    ],
+    "process_name": [
+      "alpemix.exe"
+    ]
+  },
   "Ammyy Admin": {
     "digsig_publisher": [
       "Ammyy LLC"
@@ -41,7 +63,8 @@
       "ammyy.com"
     ],
     "process_name": [
-      "aa_v*.exe"
+      "aa_v*.exe",
+      "AMMYY_Admin.exe"
     ]
   },
   "AnyDesk": {
@@ -68,12 +91,34 @@
       "RCService.exe"
     ]
   },
+  "Anyplace Control": {
+    "domain": [
+      "anyplace-control.com"
+    ],
+    "process_name": [
+      "apc_host.exe"
+    ]
+  },
   "Atera": {
     "digsig_publisher": [
       "Atera Networks Ltd"
     ],
+    "domain": [
+      "atera.com"
+    ],
     "process_name": [
-      "atera_agent.exe"
+      "atera_agent.exe",
+      "ateraagent.exe",
+      "syncrosetup.exe"
+    ]
+  },
+  "Auvik": {
+    "domain": [
+      "auvik.com"
+    ],
+    "process_name": [
+      "auvik.agent.exe",
+      "auvik.engine.exe"
     ]
   },
   "AweRay (AweSun)": {
@@ -89,6 +134,16 @@
       "AweSun.exe"
     ]
   },
+  "Barracuda": {
+    "domain": [
+      "barracudamsp.com"
+    ]
+  },
+  "Basecamp": {
+    "domain": [
+      "basecamp.com"
+    ]
+  },
   "BeAnyWhere": {
     "domain": [
       "beanywhere.com"
@@ -98,7 +153,20 @@
       "TakeControl.exe",
       "BASupSysInf.exe",
       "BASupAppSrvc.exe",
-      "BASupAppElev.exe"
+      "BASupAppElev.exe",
+      "BASupApp.exe",
+      "basupsrvc.exe",
+      "basupsrvcupdate.exe",
+      "basuptshelper.exe"
+    ]
+  },
+  "BeamYourScreen": {
+    "domain": [
+      "beamyourscreen.com"
+    ],
+    "process_name": [
+      "beamyourscreen.exe",
+      "beamyourscreen-host.exe"
     ]
   },
   "BeyondTrust (Bomgar)": {
@@ -106,11 +174,25 @@
       "Bomgar Corporation"
     ],
     "domain": [
-      "bomgarcloud.com"
+      "bomgarcloud.com",
+      "beyondtrust.com"
     ],
     "process_name": [
       "bomgar-scc.exe",
       "bomgar-rdp.exe"
+    ]
+  },
+  "CentraStage (Now Datto)": {
+    "domain": [
+      "datto.com"
+    ],
+    "process_name": [
+      "CagService.exe"
+    ]
+  },
+  "Centurion": {
+    "process_name": [
+      "ctiserv.exe"
     ]
   },
   "Chrome Remote Desktop": {
@@ -119,6 +201,23 @@
     ],
     "domain": [
       "remotedesktop.google.com"
+    ]
+  },
+  "CloudFlare Tunnel": {
+    "domain": [
+      "cloudflare.com"
+    ],
+    "process_name": [
+      "cloudflared.exe"
+    ]
+  },
+  "Comodo RMM": {
+    "domain": [
+      "one.comodo.com"
+    ],
+    "process_name": [
+      "itsmagent.exe",
+      "rviewer.exe"
     ]
   },
   "ConnectWise Control": {
@@ -133,9 +232,34 @@
       "screenconnect.windowsclient.exe"
     ]
   },
+  "CrossLoop": {
+    "domain": [
+      "crossloop.en.softonic.com"
+    ],
+    "process_name": [
+      "crossloopservice.exe"
+    ]
+  },
+  "CrossTec Remote Control": {
+    "domain": [
+      "crosstecsoftware.com"
+    ],
+    "process_name": [
+      "PCIVIDEO.EXE",
+      "supporttool.exe"
+    ]
+  },
+  "Cruz": {
+    "domain": [
+      "resources.doradosoftware.com"
+    ]
+  },
   "DW Service": {
     "digsig_publisher": [
       "DWSNET O\u00dc"
+    ],
+    "domain": [
+      "dwservice.net"
     ],
     "process_name": [
       "dwagsvc.exe"
@@ -146,15 +270,29 @@
       "SolarWinds, Inc.",
       "Solarwinds Worldwide, LLC"
     ],
+    "domain": [
+      "dameware.com"
+    ],
     "internal_name": [
       "DWRCST"
     ],
     "process_name": [
+      "dntus*.exe",
       "dwrcs.exe",
       "DameWare Remote Support.exe",
       "SolarWinds-Dameware-DRS*.exe",
       "DameWare Mini Remote Control*.exe",
       "SolarWinds-Dameware-MRC*.exe"
+    ]
+  },
+  "Datto": {
+    "domain": [
+      "datto.com"
+    ]
+  },
+  "DeskDay": {
+    "domain": [
+      "deskday.ai"
     ]
   },
   "Desktop Central": {
@@ -182,14 +320,70 @@
     ],
     "process_name": [
       "domotz.exe",
+      "domotz_bash.exe",
       "Domotz Pro Desktop App Setup*.exe",
       "Domotz Pro Desktop App.exe",
       "domotz-windows*.exe"
     ]
   },
-  "ESET Remote Administrator": {
+  "EMCO Remote Console": {
+    "domain": [
+      "emcosoftware.com"
+    ],
     "process_name": [
+      "remoteconsole.exe"
+    ]
+  },
+  "ESET Remote Administrator": {
+    "domain": [
+      "eset.com"
+    ],
+    "process_name": [
+      "era.exe",
+      "ezhelp*.exe",
+      "eratool.exe",
       "ERAAgent.exe"
+    ]
+  },
+  "Echoware": {
+    "process_name": [
+      "echoserver*.exe",
+      "echoware.dll"
+    ]
+  },
+  "Electric": {
+    "domain": [
+      "electric.ai"
+    ]
+  },
+  "Encapto": {
+    "domain": [
+      "encapto.com"
+    ]
+  },
+  "Ericom AccessNow": {
+    "domain": [
+      "ericom.com"
+    ],
+    "process_name": [
+      "accessserver.exe"
+    ]
+  },
+  "Ericom Connect": {
+    "domain": [
+      "ericom.com"
+    ],
+    "process_name": [
+      "ericomconnnectconfigurationtool.exe"
+    ]
+  },
+  "FastViewer": {
+    "domain": [
+      "fastviewer.com"
+    ],
+    "process_name": [
+      "fastclient.exe",
+      "fastmaster.exe"
     ]
   },
   "FixMe": {
@@ -223,6 +417,21 @@
       "fleetdeck_commander_launcher.exe"
     ]
   },
+  "Fortra": {
+    "domain": [
+      "fortra.com"
+    ]
+  },
+  "GatherPlace-desktop sharing": {
+    "domain": [
+      "gatherplace.com"
+    ],
+    "process_name": [
+      "gp3.exe",
+      "gp4.exe",
+      "gp5.exe"
+    ]
+  },
   "GetScreen": {
     "digsig_publisher": [
       "Get Skrin Softver"
@@ -232,6 +441,15 @@
     ],
     "process_name": [
       "GetScreen.exe"
+    ]
+  },
+  "GoToAssist": {
+    "domain": [
+      "goto.com"
+    ],
+    "process_name": [
+      "g2a*.exe",
+      "gotoassist.exe"
     ]
   },
   "GoToHTTP": {
@@ -255,6 +473,9 @@
     "digsig_publisher": [
       "LogMeIn, Inc."
     ],
+    "domain": [
+      "get.gotomypc.com"
+    ],
     "process_name": [
       "g2comm.exe",
       "g2fileh.exe",
@@ -264,6 +485,55 @@
       "g2svc.exe",
       "g2tray.exe",
       "gopcsrv.exe"
+    ]
+  },
+  "Goverlan": {
+    "domain": [
+      "goverlan.com"
+    ],
+    "process_name": [
+      "goverrmc.exe",
+      "govsrv*.exe"
+    ]
+  },
+  "Guacamole": {
+    "domain": [
+      "guacamole.apache.org"
+    ],
+    "process_name": [
+      "guacd.exe"
+    ]
+  },
+  "HelpBeam": {
+    "domain": [
+      "helpbeam.software.informer.com"
+    ],
+    "process_name": [
+      "helpbeam*.exe"
+    ]
+  },
+  "HelpWire": {
+    "process_name": [
+      "helpwire*.exe"
+    ]
+  },
+  "I'm InTouch": {
+    "domain": [
+      "01com.com"
+    ],
+    "process_name": [
+      "iit.exe",
+      "intouch.exe"
+    ]
+  },
+  "ISL Light": {
+    "domain": [
+      "islonline.com"
+    ],
+    "process_name": [
+      "islalwaysonmonitor.exe",
+      "isllight.exe",
+      "isllightservice.exe"
     ]
   },
   "ISL Online": {
@@ -320,7 +590,27 @@
       "InstantHousecall.exe"
     ],
     "process_name": [
-      "InstantHousecall.exe"
+      "hsloader.exe",
+      "ihcserver.exe",
+      "instanthousecall.exe"
+    ]
+  },
+  "IntelliAdmin Remote Control": {
+    "domain": [
+      "intelliadmin.com"
+    ],
+    "process_name": [
+      "iadmin.exe",
+      "intelliadmin.exe"
+    ]
+  },
+  "Iperius Remote": {
+    "domain": [
+      "iperiusremote.com"
+    ],
+    "process_name": [
+      "iperius.exe",
+      "iperiusremote.exe"
     ]
   },
   "Itarian": {
@@ -329,10 +619,55 @@
       "remoteaccess.itarian.com"
     ],
     "process_name": [
+      "ITSMAgent.exe",
+      "ItsmRsp.exe",
+      "ITSMService.exe",
+      "RDesktop.exe",
+      "RHost.exe",
+      "RmmService.exe",
       "ITarianRemoteAccessSetup.exe",
       "ComodoRemoteControl.exe",
       "RAccess.exe",
       "RViewer.exe"
+    ]
+  },
+  "Jump Desktop": {
+    "domain": [
+      "jumpdesktop.com"
+    ],
+    "process_name": [
+      "jumpclient.exe",
+      "jumpdesktop.exe",
+      "jumpservice.exe"
+    ]
+  },
+  "Kabuto": {
+    "domain": [
+      "repairtechsolutions.com"
+    ]
+  },
+  "Kaseya (aka Unigma)": {
+    "domain": [
+      "kaseya.com"
+    ],
+    "process_name": [
+      "agentmon.exe"
+    ]
+  },
+  "KickIdler": {
+    "domain": [
+      "kickidler.com"
+    ]
+  },
+  "LANDesk": {
+    "domain": [
+      "ivanti.com"
+    ],
+    "process_name": [
+      "issuser.exe",
+      "landeskagentbootstrap.exe",
+      "ldinv32.exe",
+      "ldsensors.exe"
     ]
   },
   "LabTeach (Connectwise Automate)": {
@@ -341,8 +676,33 @@
       "LabTech Software, LLC.",
       "Alexander Roshal"
     ],
+    "domain": [
+      "connectwise.com"
+    ],
     "process_name": [
-      "ltsvc.exe"
+      "ltsvc.exe",
+      "ltsvcmon.exe",
+      "lttray.exe"
+    ]
+  },
+  "Laplink Everywhere": {
+    "domain": [
+      "everywhere.laplink.com"
+    ],
+    "process_name": [
+      "laplink.exe",
+      "laplinkeverywhere.exe",
+      "llrcservice.exe",
+      "serverproxyservice.exe"
+    ]
+  },
+  "Laplink Gold": {
+    "domain": [
+      "wen.laplink.com"
+    ],
+    "process_name": [
+      "laplink.exe",
+      "tsircusr.exe"
     ]
   },
   "Level.io": {
@@ -362,9 +722,13 @@
     "digsig_publisher": [
       "Yakhnovets Denis Aleksandrovich IP"
     ],
+    "domain": [
+      "litemanager.com"
+    ],
     "process_name": [
       "ROMServer.exe",
-      "ROMFUSClient.exe"
+      "ROMFUSClient.exe",
+      "romviewer.exe"
     ]
   },
   "LogMeIn": {
@@ -372,12 +736,30 @@
       "LogMeIn, Inc"
     ],
     "domain": [
+      "logmein.com",
       "logmeinrescue.com"
     ],
     "process_name": [
       "lmiignition.exe",
       "lmiguardiansvc.exe",
-      "logmein*.exe"
+      "lmiignition.exe",
+      "logmein*.exe",
+      "logmeinsystray.exe"
+    ]
+  },
+  "LogMeIn rescue": {
+    "domain": [
+      "logmeinrescue.com"
+    ],
+    "process_name": [
+      "support-logmeinrescue*.exe",
+      "support-logmeinrescue.exe",
+      "lmi_rescue.exe"
+    ]
+  },
+  "MSP360": {
+    "domain": [
+      "msp360.com"
     ]
   },
   "ManageEngine": {
@@ -385,9 +767,31 @@
       "ManageEngine Remote Access Plus",
       "Zoho Corporation Pvt. Ltd."
     ],
+    "domain": [
+      "manageengine.com"
+    ],
     "process_name": [
       "ManageEngine_Remote_Access_Plus.exe",
       "InstallShield Setup.exe"
+    ]
+  },
+  "MeshCentral": {
+    "domain": [
+      "meshcentral.com"
+    ],
+    "process_name": [
+      "mesh*.exe"
+    ]
+  },
+  "Microsoft Quick Assist": {
+    "cmdline": [
+      "ms-quick-assist"
+    ],
+    "domain": [
+      "*.support.services.microsoft.com"
+    ],
+    "process_name": [
+      "quickassist.exe"
     ]
   },
   "Microsoft RDP": {
@@ -399,6 +803,32 @@
   "Microsoft TSC": {
     "process_name": [
       "mstsc.exe"
+    ]
+  },
+  "Mikogo": {
+    "domain": [
+      "mikogo.com"
+    ],
+    "process_name": [
+      "mikogo.exe",
+      "mikogolauncher.exe",
+      "mikogo-service.exe",
+      "mikogo-starter.exe"
+    ]
+  },
+  "MioNet (Also known as WD Anywhere Access)": {
+    "process_name": [
+      "mionet.exe",
+      "mionetmanager.exe"
+    ]
+  },
+  "MyIVO": {
+    "domain": [
+      "myivo-server.software.informer.com"
+    ],
+    "process_name": [
+      "myivomanager.exe",
+      "myivomgr.exe"
     ]
   },
   "N-Able Advanced Monitoring Agent": {
@@ -419,7 +849,15 @@
     ],
     "process_name": [
       "Agent_*_RW.exe",
-      "winagent.exe"
+      "winagent.exe",
+      "Nable.Ecosystem.WindowsAgent.exe",
+      "Msp.Ecosystem.Discovery-*.exe",
+      "NableSixtyFourBitManager.exe"
+    ]
+  },
+  "Naverisk": {
+    "domain": [
+      "naverisk.com"
     ]
   },
   "NetSupport Manager": {
@@ -433,7 +871,39 @@
       "client32"
     ],
     "process_name": [
-      "client32.exe"
+      "client32.exe",
+      "pcictlui.exe"
+    ]
+  },
+  "Netop Remote Control (aka Impero Connect)": {
+    "domain": [
+      "imperosoftware.com"
+    ],
+    "process_name": [
+      "nhostsvc.exe",
+      "nhstw32.exe",
+      "nldrw32.exe",
+      "rmserverconsolemediator.exe"
+    ]
+  },
+  "Netreo": {
+    "domain": [
+      "netreo.com"
+    ]
+  },
+  "Neturo": {
+    "process_name": [
+      "neturo.exe",
+      "ntrntservice.exe"
+    ]
+  },
+  "Netviewer": {
+    "domain": [
+      "download.cnet.com"
+    ],
+    "process_name": [
+      "netviewer*.exe",
+      "netviewer.exe"
     ]
   },
   "NinjaRMM": {
@@ -441,7 +911,8 @@
       "NinjaRMM, LLC"
     ],
     "domain": [
-      "resources.ninjarmm.com"
+      "resources.ninjarmm.com",
+      "ninjaone.com"
     ],
     "process_name": [
       "NinjaRMMAgent.exe",
@@ -449,9 +920,36 @@
       "ninjarmm-cli.exe"
     ]
   },
+  "NoMachine": {
+    "domain": [
+      "nomachine.com"
+    ],
+    "process_name": [
+      "nomachine*.exe",
+      "nxd.exe"
+    ]
+  },
+  "NoteOn-desktop sharing": {
+    "process_name": [
+      "nateon*.exe",
+      "nateon.exe",
+      "nateonmain.exe"
+    ]
+  },
+  "OCS inventory": {
+    "domain": [
+      "ocsinventory-ng.org"
+    ],
+    "process_name": [
+      "ocsinventory.exe",
+      "ocsservice.exe"
+    ]
+  },
   "PCAnywhere Client": {
     "process_name": [
-      "awrem32.exe"
+      "awrem32.exe",
+      "pcaquickconnect.exe",
+      "winaw32.exe"
     ]
   },
   "PCAnywhere Server": {
@@ -459,12 +957,54 @@
       "awhost32.exe"
     ]
   },
+  "Panorama9": {
+    "domain": [
+      "panorama9.com"
+    ]
+  },
   "Parallels Access": {
     "digsig_publisher": [
       "Parallels International GmbH"
     ],
+    "domain": [
+      "parallels.com"
+    ],
     "process_name": [
-      "TSClient.exe"
+      "prl_deskctl_agent.exe",
+      "prl_deskctl_wizard.exe",
+      "prl_pm_service.exe",
+      "2XRemoteInstTmp.exe",
+      "2XDevRedir.exe",
+      "2XInst.exe"
+    ]
+  },
+  "Parsec": {
+    "domain": [
+      "parsec.app"
+    ],
+    "process_name": [
+      "pservice.exe",
+      "parsecd.exe"
+    ]
+  },
+  "Pcnow": {
+    "domain": [
+      "au.pcmag.com"
+    ],
+    "process_name": [
+      "mwcliun.exe",
+      "pcnmgr.exe",
+      "webexpcnow.exe"
+    ]
+  },
+  "Pcvisit": {
+    "domain": [
+      "pcvisit.de"
+    ],
+    "process_name": [
+      "pcvisit.exe",
+      "pcvisit_client.exe",
+      "pcvisit-easysupport.exe"
     ]
   },
   "Pilixo": {
@@ -481,34 +1021,73 @@
       "Pilixo_Installer*.exe"
     ]
   },
+  "Pocket Controller": {
+    "domain": [
+      "soti.net"
+    ],
+    "process_name": [
+      "pocketcontroller.exe",
+      "pocketcloudservice.exe",
+      "wysebrowser.exe"
+    ]
+  },
   "Pulseway": {
     "digsig_publisher": [
       "MMSoft Design Ltd."
+    ],
+    "domain": [
+      "pulseway.com"
     ],
     "process_name": [
       "PCMonitorManager.exe",
       "pcmonitorsrv.exe"
     ]
   },
-  "Quick Assist": {
-    "cmdline": [
-      "ms-quick-assist"
-    ],
+  "QQ IM-remote assistance": {
     "domain": [
-      "*.support.services.microsoft.com"
+      "qq-messenger.en.softonic.com"
     ],
     "process_name": [
-      "quickassist.exe"
+      "qq.exe",
+      "qqpcmgr.exe"
+    ]
+  },
+  "Quest KACE Agent (formerly Dell KACE)": {
+    "domain": [
+      "www.quest.com"
+    ],
+    "process_name": [
+      "konea.exe"
     ]
   },
   "RAdmin": {
     "digsig_publisher": [
       "Famatech Corp."
     ],
+    "domain": [
+      "radmin.com"
+    ],
     "process_name": [
+      "radmin.exe",
       "radmin3.exe",
       "famitrfc.exe",
       "rserver3.exe"
+    ]
+  },
+  "RDPView": {
+    "domain": [
+      "systemmanager.ru"
+    ]
+  },
+  "RES Automation Manager": {
+    "domain": [
+      "ivanti.com"
+    ],
+    "process_name": [
+      "wisshell*.exe",
+      "wmc.exe",
+      "wmc_deployer.exe",
+      "wmcsvc.exe"
     ]
   },
   "RPort": {
@@ -527,6 +1106,60 @@
       "remcos*.exe"
     ]
   },
+  "Remobo": {
+    "domain": [
+      "remobo.en.softonic.com"
+    ],
+    "process_name": [
+      "remobo.exe",
+      "remobo_client.exe",
+      "remobo_tracker.exe"
+    ]
+  },
+  "Remote Desktop Manager": {
+    "domain": [
+      "devolutions.net"
+    ],
+    "process_name": [
+      "Devolutions.Updater.exe",
+      "Setup.RemoteDesktopManager*.exe",
+      "Setup.RemoteDesktopManager*.msi",
+      "RemoteDesktopManager.exe",
+      "RDMAgent.exe",
+      "RemoteDesktopManager_x64.exe",
+      "RemoteDesktopManager_ARM64.exe"
+    ]
+  },
+  "Remote Desktop Plus": {
+    "domain": [
+      "donkz.nl"
+    ]
+  },
+  "Remote Manipulator System": {
+    "domain": [
+      "rmansys.ru"
+    ],
+    "process_name": [
+      "rfusclient.exe",
+      "rutserv.exe"
+    ]
+  },
+  "Remote.it": {
+    "domain": [
+      "remote.it"
+    ]
+  },
+  "RemoteCall": {
+    "domain": [
+      "remotecall.com"
+    ],
+    "process_name": [
+      "rcengmgru.exe",
+      "rcmgrsvc.exe",
+      "remotesupportplayeru.exe",
+      "rxstartsupport.exe"
+    ]
+  },
   "RemotePC": {
     "digsig_publisher": [
       "IDrive, Inc",
@@ -537,10 +1170,21 @@
       "www.remotepc.com"
     ],
     "process_name": [
+      "remotepcservice.exe",
+      "rpcsuite.exe",
       "idrive.RemotePCAgent",
       "Idrive.File-Transfer",
-      "RemotePC.exe",
-      "RemotePCService.exe"
+      "RemotePC.exe"
+    ]
+  },
+  "RemotePass": {
+    "domain": [
+      "remotepass.com"
+    ],
+    "process_name": [
+      "remotepass-access.exe",
+      "rpaccess.exe",
+      "rpwhostscr.exe"
     ]
   },
   "RemoteUtilities": {
@@ -555,6 +1199,17 @@
       "rutview.exe"
     ]
   },
+  "RemoteView": {
+    "domain": [
+      "content.rview.com"
+    ],
+    "process_name": [
+      "remoteview.exe",
+      "rv.exe",
+      "rvagent.exe",
+      "rvagtray.exe"
+    ]
+  },
   "Rocket Remote Desktop": {
     "digsig_publisher": [
       "Rocket Remote Desktop"
@@ -562,6 +1217,33 @@
     "process_name": [
       "RDConsole.exe",
       "RocketRemoteDesktop_Setup.exe"
+    ]
+  },
+  "Royal Server": {
+    "domain": [
+      "royalapps.com"
+    ]
+  },
+  "Royal TS": {
+    "domain": [
+      "royalapps.com"
+    ],
+    "process_name": [
+      "royalts.exe"
+    ]
+  },
+  "RuDesktop": {
+    "domain": [
+      "rudesktop.ru"
+    ],
+    "process_name": [
+      "rd.exe",
+      "rudesktop*.exe"
+    ]
+  },
+  "RunSmart": {
+    "domain": [
+      "runsmart.io"
     ]
   },
   "RustDesk": {
@@ -580,11 +1262,33 @@
     ]
   },
   "ScreenConnect": {
+    "domain": [
+      "control.connectwise.com"
+    ],
     "internal_name": [
       "RemoteWorkforceClientWpf.exe"
     ],
     "process_name": [
-      "Remote Workforce Client.exe"
+      "Remote Workforce Client.exe",
+      "screenconnect*.exe",
+      "screenconnect.windowsclient.exe"
+    ]
+  },
+  "Seetrol": {
+    "domain": [
+      "seetrol.co.kr"
+    ],
+    "process_name": [
+      "seetrolcenter.exe",
+      "seetrolclient.exe",
+      "seetrolmyservice.exe",
+      "seetrolremote.exe",
+      "seetrolsetting.exe"
+    ]
+  },
+  "Senso.cloud": {
+    "domain": [
+      "senso.cloud"
     ]
   },
   "ShowMyPC": {
@@ -599,7 +1303,40 @@
     ],
     "process_name": [
       "smpcsetup.exe",
-      "showmypc*.exe"
+      "showmypc*.exe",
+      "showmypc.exe"
+    ]
+  },
+  "SimpleHelp": {
+    "domain": [
+      "simple-help.com"
+    ],
+    "process_name": [
+      "simplehelpcustomer.exe",
+      "simpleservice.exe",
+      "windowslauncher.exe",
+      "remote access.exe",
+      "simplegatewayservice.exe"
+    ]
+  },
+  "Site24x7": {
+    "domain": [
+      "site24x7.com"
+    ]
+  },
+  "SkyFex": {
+    "domain": [
+      "skyfex.com"
+    ]
+  },
+  "Sophos-Remote Management System": {
+    "domain": [
+      "community.sophos.com"
+    ],
+    "process_name": [
+      "clientmrinit.exe",
+      "mgntsvc.exe",
+      "routernt.exe"
     ]
   },
   "Sorillus": {
@@ -615,19 +1352,23 @@
     "digsig_publisher": [
       "Splashtop Inc."
     ],
-    "process_name": [
-      "strwinclt.exe"
-    ]
-  },
-  "Splashtop (Beta)": {
     "domain": [
       "splashtop.com"
     ],
     "process_name": [
+      "strwinclt.exe",
+      "sragent.exe",
+      "srmanager.exe",
+      "srserver.exe",
+      "srservice.exe",
       "SplashtopSOS.exe",
-      "SRServer.exe",
       "Splashtop_Streamer_Windows*.exe",
       "SRManager.exe"
+    ]
+  },
+  "SpyAnywhere": {
+    "domain": [
+      "spyanywhere.com"
     ]
   },
   "SuperOps": {
@@ -649,9 +1390,13 @@
     "digsig_publisher": [
       "Nanosystems S.r.l."
     ],
+    "domain": [
+      "supremocontrol.com"
+    ],
     "process_name": [
       "supremo.exe",
       "supremohelper.exe",
+      "supremoservice.exe",
       "supremosystem.exe"
     ]
   },
@@ -684,15 +1429,39 @@
       "Kabuto.App.Runner.exe"
     ]
   },
+  "Tactical RMM": {
+    "domain": [
+      "docs.tacticalrmm.com"
+    ],
+    "process_name": [
+      "tacticalrmm.exe"
+    ]
+  },
+  "Tailscale": {
+    "domain": [
+      "tailscale.com"
+    ]
+  },
+  "Tanium Deploy": {
+    "domain": [
+      "tanium.com"
+    ]
+  },
   "TeamViewer Desktop": {
     "digsig_publisher": [
       "TeamViewer Germany GmbH",
       "TeamViewer GmbH",
       "TeamViewer"
     ],
+    "domain": [
+      "teamviewer.com"
+    ],
     "process_name": [
       "teamviewer_desktop.exe",
-      "teamviewer.exe"
+      "teamviewerqs.exe",
+      "tv_w32.exe",
+      "tv_w64.exe",
+      "teamviewer"
     ]
   },
   "TeamViewer Service": {
@@ -701,10 +1470,23 @@
       "TeamViewer GmbH",
       "TeamViewer"
     ],
+    "domain": [
+      "teamviewer.com"
+    ],
     "process_name": [
       "teamviewer.exe",
       "teamviewer_service.exe",
       "teamviewerhost"
+    ]
+  },
+  "TeleDesktop": {
+    "domain": [
+      "tele-desk.com"
+    ],
+    "process_name": [
+      "pstlaunch.exe",
+      "ptdskclient.exe",
+      "ptdskhost.exe"
     ]
   },
   "TightVNC": {
@@ -723,6 +1505,24 @@
       "TightVNCViewerPortable*.exe",
       "tvnviewer.exe",
       "tvnserver.exe"
+    ]
+  },
+  "ToDesk": {
+    "domain": [
+      "todesktop.com"
+    ],
+    "process_name": [
+      "todesk.exe"
+    ]
+  },
+  "TurboMeeting": {
+    "domain": [
+      "acceo.com"
+    ],
+    "process_name": [
+      "pcstarter.exe",
+      "turbomeeting.exe",
+      "turbomeetingstarter.exe"
     ]
   },
   "UltraVNC": {
@@ -744,6 +1544,7 @@
       "ultraviewer.net"
     ],
     "process_name": [
+      "ultraviewer.exe",
       "UltraViewer_Desktop.exe",
       "UltraViewer_setup*",
       "UltraViewer_Service.exe"
@@ -753,11 +1554,36 @@
     "digsig_publisher": [
       "uvnc bvba"
     ],
+    "domain": [
+      "uvnc.com",
+      "realvnc.com"
+    ],
     "process_name": [
       "winvnc.exe",
       "vncviewer.exe",
       "winvncsc.exe",
-      "winwvc.exe"
+      "winwvc.exe",
+      "vncserver.exe",
+      "vncserverui.exe",
+      "vncviewer.exe",
+      "winvnc*.exe"
+    ]
+  },
+  "WebRDP": {
+    "domain": [
+      "github.com"
+    ],
+    "process_name": [
+      "webrdp.exe"
+    ]
+  },
+  "Weezo": {
+    "domain": [
+      "weezo.en.softonic.com"
+    ],
+    "process_name": [
+      "weezo.exe",
+      "weezohttpd.exe"
     ]
   },
   "Xeox": {
@@ -777,6 +1603,16 @@
       "xeox-agent_x86.exe"
     ]
   },
+  "Zabbix Agent": {
+    "domain": [
+      "zabbix.com"
+    ]
+  },
+  "ZeroTier": {
+    "domain": [
+      "zerotier.com"
+    ]
+  },
   "Zoho Assist": {
     "digsig_publisher": [
       "ZOHO CORPORATION PRIVATE LIMITED"
@@ -785,9 +1621,55 @@
       "assist.zoho.com"
     ],
     "process_name": [
+      "za_connect.exe",
       "Zaservice.exe",
       "Zohours.exe",
-      "ZohoMeeting.exe"
+      "ZohoMeeting.exe",
+      "zohotray.exe"
+    ]
+  },
+  "eHorus": {
+    "domain": [
+      "ehorus.com"
+    ],
+    "process_name": [
+      "ehorus standalone.exe"
+    ]
+  },
+  "ezHelp": {
+    "domain": [
+      "ezhelp.co.kr"
+    ],
+    "process_name": [
+      "ezhelpclient.exe",
+      "ezhelpclientmanager.exe"
+    ]
+  },
+  "mRemoteNG": {
+    "domain": [
+      "mremoteng.org"
+    ]
+  },
+  "ngrok": {
+    "domain": [
+      "ngrok.com"
+    ],
+    "process_name": [
+      "ngrok.exe"
+    ]
+  },
+  "rdp2tcp": {
+    "domain": [
+      "github.com"
+    ],
+    "process_name": [
+      "tdp2tcp.exe",
+      "rdp2tcp.py"
+    ]
+  },
+  "rdpwrap": {
+    "domain": [
+      "github.com"
     ]
   }
 }
