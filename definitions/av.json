@@ -138,10 +138,10 @@
     "Trend Micro Common Client": {
         "process_name": ["TmCCSF.exe"]
     },
-    "Trend Micro Listner Service": {
+    "Trend Micro Listener Service": {
         "process_name": ["TmListen.exe"]
     },
     "Trend Micro Real Time Scan": {
         "process_name": ["Ntrtscan.exe"]
     }
-} 
+}
