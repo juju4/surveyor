@@ -163,9 +163,6 @@
         "process_name": ["ShareEnum.exe"],
         "internal_name": ["ShareEnum"]
     },
-    "PsList": {
-        "process_name": ["PsList.exe"]
-    },
     "ShellRunas": {
         "process_name": ["ShellRunas.exe"],
         "internal_name": ["ShellRunas"]
