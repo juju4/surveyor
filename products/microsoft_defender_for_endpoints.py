@@ -151,6 +151,15 @@ class DefenderForEndpoints(Product):
                     result = Result(hostname, username, proc_name, cmdline,
                                     (timestamp,))
                     results.add(result)
+            elif response.status_code == 429:
+
+                print("Rate limit exceeded.")
+                retry_after = response.headers.get('Retry-After', 3)
+                wait_time = int(retry_after)
+                print(f"Waiting for {wait_time} seconds before retrying...")
+                time.sleep(wait_time)
+                return self._post_advanced_query(data, headers)
+
             else:
                 self._echo(f"Received status code: {response.status_code} (message: {response.json()})")
         except KeyboardInterrupt:
