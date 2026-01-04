@@ -147,7 +147,7 @@
 },
 "nslookup":{
     "process_name":["nslookup.exe"]
-}, 
+},
 "ipconfig":{
     "process_name":["ipconfig.exe"]
 },
@@ -156,7 +156,7 @@
 },
 "Linux Subsystem": {
     "process_name":["wsl.exe"]
-}, 
+},
 "mmc": {
     "process_name": ["mmc.exe"]
 },
@@ -177,16 +177,16 @@
 },
 "registry":{
     "process_name":["regedit.exe", "regini.exe", "reg.exe"]
-}, 
+},
 "findstr":{
     "process_name":["findstr.exe"]
-}, 
+},
 "event viewer":{
     "process_name":["eventvwr.exe"]
-}, 
+},
 "gpupdate":{
     "process_name":["gpupdate.exe"]
-}, 
+},
 "certutil":{
     "process_name":["certutil.exe"]
 }

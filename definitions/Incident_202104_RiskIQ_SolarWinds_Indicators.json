@@ -77,7 +77,7 @@
 			"xrlinks.com",
 			"zupertech.com"
 		]
-	}, 
+	},
 	"SOLARWINDS_RISKIQ_UPDATED_IPS":{
 		"ipaddr":[
 			"103.124.105.87",
@@ -159,4 +159,3 @@
 		]
 	}
 }
-

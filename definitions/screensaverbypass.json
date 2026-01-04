@@ -1,13 +1,31 @@
 {
     "Caffeine": {
-        "process_name": ["caffeine.exe"]
+        "process_name": ["caffeine.exe", "caffeine32.exe", "caffeine64.exe"],
+        "domain": ["zhornsoftware.co.uk"]
+    },
+    "jiggly-mouse": {
+        "cmdline": ["jiggly-mouse"]
+    },
+    "MacroExcel": {
+        "cmdline": ["MM.xlsm"]
     },
     "Mouse Jiggler": {
         "process_name": ["mousejiggle.exe", "mousejiggler.exe"],
         "digsig_publisher": ["Alistair Young", "Arkane Systems"],
         "internal_name": ["MouseJiggler"]
     },
+    "mousejiggler.app": {
+        "cmdline": ["MouseJiggler.exe"],
+        "domain": ["mousejiggler.app"]
+    },
+    "mousejiggler.net": {
+        "cmdline": ["MouseJiggler.exe"],
+        "domain": ["mousejiggler.net"]
+    },
     "Mouse Mover": {
         "process_name": ["move mouse.exe"]
+    },
+    "NoSleep": {
+        "cmdline": ["NoSleep.exe"]
     }
 }

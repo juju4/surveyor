@@ -2,11 +2,11 @@
     "AweRay (AweSun)": {
         "process_name": ["aweray_remote*.exe",
                          "AweSun.exe"],
-        "domain": ["asapi.aweray.net", 
+        "domain": ["asapi.aweray.net",
                    "asapi-us.aweray.net"],
         "digsig_publisher": ["AWERAY PTE. LTD."]
     },
-    "Ammyy Admin": { 
+    "Ammyy Admin": {
         "process_name": ["aa_v*.exe"],
         "domain": ["ammyy.com"],
         "digsig_publisher": ["Ammyy LLC"]
@@ -22,8 +22,8 @@
         "digsig_publisher": ["philandro Software GmbH"]
     },
     "AnyViewer" : {
-        "process_name": ["AnyViewerSetup.exe", 
-                        "RCClient.exe", 
+        "process_name": ["AnyViewerSetup.exe",
+                        "RCClient.exe",
                         "RCService.exe"],
         "domain": ["aomeisoftware.com"],
         "digsig_publisher": ["AOMEI International Network Limited"]
@@ -55,7 +55,7 @@
         "process_name": ["dwagsvc.exe"],
         "digsig_publisher": ["DWSNET OÜ"]
     },
-    "GoToMyPC": { 
+    "GoToMyPC": {
         "process_name": ["g2comm.exe",
                          "g2fileh.exe",
                          "g2host.exe",
@@ -67,15 +67,15 @@
         "digsig_publisher": ["LogMeIn, Inc."]
     },
     "LiteManager": {
-        "process_name": ["ROMServer.exe", 
+        "process_name": ["ROMServer.exe",
                         "ROMFUSClient.exe"],
         "digsig_publisher": ["Yakhnovets Denis Aleksandrovich IP"]
     },
-    "Microsoft RDP": { 
+    "Microsoft RDP": {
         "process_name": ["termsrv.exe",
                         "Microsoft Remote Desktop"]
     },
-    "Microsoft TSC": { 
+    "Microsoft TSC": {
         "process_name": ["mstsc.exe"]
     },
     "NetSupport Manager": {
@@ -84,14 +84,14 @@
         "domain": ["geo.netsupportsoftware.com"],
         "digsig_publisher": ["NetSupport Ltd"]
     },
-    "PCAnywhere Client": { 
+    "PCAnywhere Client": {
         "process_name": ["awrem32.exe"]
     },
-    "PCAnywhere Server": { 
+    "PCAnywhere Server": {
         "process_name": ["awhost32.exe"]
     },
     "Pulseway": {
-        "process_name": ["PCMonitorManager.exe", 
+        "process_name": ["PCMonitorManager.exe",
                         "pcmonitorsrv.exe"],
         "digsig_publisher": ["MMSoft Design Ltd."]
     },
@@ -100,7 +100,7 @@
         "domain": ["*.support.services.microsoft.com"],
         "cmdline": ["ms-quick-assist"]
     },
-    "RAdmin": { 
+    "RAdmin": {
         "process_name": ["radmin3.exe",
                          "famitrfc.exe",
                          "rserver3.exe"],
@@ -121,19 +121,19 @@
         "digsig_publisher": ["Splashtop Inc."]
     },
     "Supremo": {
-        "process_name": ["supremo.exe", 
+        "process_name": ["supremo.exe",
                          "supremohelper.exe",
                          "supremosystem.exe"],
         "digsig_publisher": ["Nanosystems S.r.l."]
     },
-    "TeamViewer Desktop": { 
+    "TeamViewer Desktop": {
         "process_name": ["teamviewer_desktop.exe",
                          "teamviewer.exe"],
         "digsig_publisher": ["TeamViewer Germany GmbH",
                              "TeamViewer GmbH",
                              "TeamViewer"]
     },
-    "TeamViewer Service": { 
+    "TeamViewer Service": {
         "process_name": ["teamviewer.exe",
                          "teamviewer_service.exe",
                          "teamviewerhost"],
@@ -142,9 +142,9 @@
                              "TeamViewer"]
     },
     "VNC": {
-        "process_name": ["winvnc.exe", 
+        "process_name": ["winvnc.exe",
                          "vncviewer.exe",
-                         "winvncsc.exe", 
+                         "winvncsc.exe",
                          "winwvc.exe"],
         "digsig_publisher": ["uvnc bvba"]
     },
@@ -166,16 +166,16 @@
         "domain": ["ultravnc.com"]
     },
     "Zoho Assist": {
-        "process_name": ["Zaservice.exe", 
+        "process_name": ["Zaservice.exe",
                         "Zohours.exe",
                         "ZohoMeeting.exe"],
         "domain": ["assist.zoho.com"],
-        "digsig_publisher": ["ZOHO CORPORATION PRIVATE LIMITED"] 
+        "digsig_publisher": ["ZOHO CORPORATION PRIVATE LIMITED"]
     },
     "Desktop Central": {
 		"process_name": ["dcagentservice.exe"],
         "domain": ["desktopcentral.manageengine.com"],
-        "digsig_publisher": ["ZOHO Corporation Private Limited"] 
+        "digsig_publisher": ["ZOHO Corporation Private Limited"]
 	},
     "UltraView": {
         "process_name": ["UltraViewer_Desktop.exe",
@@ -279,7 +279,7 @@
     "ESET Remote Administrator": {
         "process_name": ["ERAAgent.exe"]
     },
-    "DameWare": { 
+    "DameWare": {
         "process_name": ["dwrcs.exe",
                         "DameWare Remote Support.exe",
                         "SolarWinds-Dameware-DRS*.exe",
@@ -360,8 +360,8 @@
     },
     "Xeox": {
         "domain":["*.xeox.com", "xeox.com"],
-        "process_name":["xeox_service_windows.exe", 
-                        "xeox-agent_x64.exe", 
+        "process_name":["xeox_service_windows.exe",
+                        "xeox-agent_x64.exe",
                         "xeox-agent_x86.exe"],
         "digsig_publisher": ["hs2n Informationstechnologie GmbH"],
         "internal_name": ["XEOX Agent for Windows"]
@@ -376,8 +376,8 @@
         "digsig_publisher": ["Instant Housecall", "Specialist Sign-in.exe"],
         "process_name": ["InstantHousecall.exe"],
         "internal_name": ["InstantHousecall.exe"],
-        "domain": ["secure.instanthousecall.com", 
-                "*.instanthousecall.com", 
+        "domain": ["secure.instanthousecall.com",
+                "*.instanthousecall.com",
                 "instanthousecall.com"]
     },
     "ISL Online":{
@@ -391,46 +391,46 @@
         "digsig_publisher": ["Parallels International GmbH"]
     },
     "Pilixo": {
-        "digsig_publisher": ["Pilixo Cloud Solutions", 
+        "digsig_publisher": ["Pilixo Cloud Solutions",
                             "PILIXO INTERNATIONAL LLC"],
-        "domain": ["*.pilixo.com", 
-                "pilixo.com", 
+        "domain": ["*.pilixo.com",
+                "pilixo.com",
                 "download.pilixo.com"],
         "process_name": ["Pilixo_Installer*.exe"]
     },
     "RemotePC": {
-        "digsig_publisher": ["IDrive, Inc", 
+        "digsig_publisher": ["IDrive, Inc",
                             "IDrive Incorporated"],
-        "domain": ["remotepc.com", 
+        "domain": ["remotepc.com",
                 "www.remotepc.com"],
-        "process_name": ["idrive.RemotePCAgent", 
+        "process_name": ["idrive.RemotePCAgent",
                         "Idrive.File-Transfer",
                         "RemotePC.exe",
                         "RemotePCService.exe"]
     },
     "SuperOps": {
         "digsig_publisher": ["Superops Inc"],
-        "process_name": ["superops.exe", 
+        "process_name": ["superops.exe",
                         "superopsticket.exe"],
-        "domain": ["serv.superopsalpha.com", 
-                "*.superops.ai", 
-                "*.superopsalpha.com", 
+        "domain": ["serv.superopsalpha.com",
+                "*.superops.ai",
+                "*.superopsalpha.com",
                 "*.superopsbeta.com"]
     },
     "Rocket Remote Desktop":{
         "digsig_publisher": ["Rocket Remote Desktop"],
-        "process_name":["RDConsole.exe", 
+        "process_name":["RDConsole.exe",
                         "RocketRemoteDesktop_Setup.exe"]
     },
     "GetScreen":{
         "digsig_publisher":["Get Skrin Softver"],
-        "process_name":["GetScreen.exe"], 
+        "process_name":["GetScreen.exe"],
         "domain":["GetScreen.me"]
     },
     "ManageEngine":{
-        "digsig_publisher":["ManageEngine Remote Access Plus", 
+        "digsig_publisher":["ManageEngine Remote Access Plus",
                             "Zoho Corporation Pvt. Ltd."],
-        "process_name":["ManageEngine_Remote_Access_Plus.exe", 
+        "process_name":["ManageEngine_Remote_Access_Plus.exe",
                         "InstallShield Setup.exe"]
     },
     "Remcos":{

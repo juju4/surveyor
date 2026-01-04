@@ -13,7 +13,7 @@
     "modload":["pcwutl.dll"],
     "regmod":["HKLM"],
     "ipport": ["80"]
-  }, 
+  },
   "multiple_values":{
     "process_name":["svchost.exe", "cmd.exe"]
   },

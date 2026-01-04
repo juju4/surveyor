@@ -1,24 +1,24 @@
 {
-    "AutoIt": { 
+    "AutoIt": {
         "process_name": ["autoit.exe"]
     },
-    "Powershell": { 
+    "Powershell": {
         "process_name": ["powershell*.exe", "pwsh.exe", "posh.exe", "runscripthelper.exe"]
     },
-    "PSExec": { 
+    "PSExec": {
         "process_name": ["psexec*.exe",
                          "psexesvc.exe"]
     },
-    "Windows Shell": { 
+    "Windows Shell": {
         "process_name": ["cmd.exe"]
     },
-    "WScript": { 
+    "WScript": {
         "process_name": ["wscript.exe"]
     },
     "Jscript":{
         "process_name": ["jscript.exe"]
     },
-    "CScript": { 
+    "CScript": {
         "process_name": ["cscript.exe"]
     },
     "mshta": {
@@ -26,22 +26,22 @@
     },
     "hh":{
         "process_name": ["hh.exe"]
-    }, 
+    },
     "Diskshadow": {
         "process_name":["diskshadow.exe"]
-    }, 
+    },
     "PHP":{
         "process_name":["php.exe", "php-cgi.exe"]
     },
-    "Python": { 
+    "Python": {
         "process_name": ["python*.exe",
                          "python*"]
     },
-    "Perl": { 
+    "Perl": {
         "process_name": ["perl*.exe",
                          "perl*"]
     },
-    "Linux Shell": { 
+    "Linux Shell": {
         "process_name": ["sh.exe",
                          "bash.exe",
                          "zsh.exe",
@@ -51,14 +51,14 @@
     },
     "msbuild":{
         "process_name":["msbuild.exe"]
-    }, 
+    },
     "GPscript.exe":{
         "process_name":["gpscript.exe"]
     },
-    "AutoHotKey": { 
+    "AutoHotKey": {
         "process_name": ["autohotkey.exe",
                         "AutoHotkeyU32.exe",
                         "AutoHotkeyA32.exe",
-                        "AutoHotkeyU64.exe"]      
+                        "AutoHotkeyU64.exe"]
     }
 }

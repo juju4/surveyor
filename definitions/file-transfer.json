@@ -2,32 +2,32 @@
     "CyberDuck": {
         "process_name": ["cyberduck"]
     },
-    "Filezilla": { 
+    "Filezilla": {
         "process_name": ["fzsftp.exe",
                          "filezilla.exe",
                          "fzputtygen.exe",
                          "filezilla"]
     },
-    "FTP": { 
+    "FTP": {
         "process_name": ["ftp*.exe",
                          "ftp"]
     },
-    "pushd": { 
+    "pushd": {
         "process_name": ["pushd.exe"]
     },
-    "robocopy": { 
+    "robocopy": {
         "process_name": ["robocopy.exe"]
     },
-    "SCP": { 
+    "SCP": {
         "process_name": ["pscp.exe",
                          "scp.exe",
                          "winscp.exe"]
     },
-    "SFTP": { 
+    "SFTP": {
         "process_name": ["sftp*.exe",
                          "sftp"]
     },
-    "xcopy": { 
+    "xcopy": {
         "process_name": ["xcopy.exe"]
     }
 }
