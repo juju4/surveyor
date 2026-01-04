@@ -9,7 +9,8 @@
   },
   "AutoIt": {
     "process_name": [
-      "autoit.exe"
+      "autoit.exe",
+      "autoit3.exe"
     ]
   },
   "CScript": {
@@ -27,6 +28,15 @@
       "gpscript.exe"
     ]
   },
+  "Golang": {
+    "cmdline": [
+      "go build",
+      "go.exe build"
+    ],
+    "process_name": [
+      "go.exe"
+    ]
+  },
   "Jscript": {
     "process_name": [
       "jscript.exe"
@@ -40,6 +50,17 @@
       "sh",
       "bash",
       "zsh"
+    ]
+  },
+  "NodeJS": {
+    "domain": [
+      "registry.npmjs.org",
+      "npmjs.com",
+      "nodejs.org"
+    ],
+    "process_name": [
+      "node.exe",
+      "npm.exe"
     ]
   },
   "PHP": {
@@ -69,9 +90,19 @@
     ]
   },
   "Python": {
+    "domain": [
+      "pypi.org",
+      "python.org"
+    ],
     "process_name": [
       "python*.exe",
       "python*"
+    ]
+  },
+  "Rust": {
+    "process_name": [
+      "rust.exe",
+      "cargo.exe"
     ]
   },
   "WScript": {
