@@ -1,0 +1,57 @@
+{
+  "binance": {
+    "domain": [
+      "binance.com"
+    ]
+  },
+  "bybit": {
+    "domain": [
+      "bybit.com"
+    ]
+  },
+  "changenow": {
+    "domain": [
+      "changenow.ing"
+    ]
+  },
+  "coinbase": {
+    "domain": [
+      "coinbase.com"
+    ]
+  },
+  "crypto.com": {
+    "domain": [
+      "crypto.com"
+    ]
+  },
+  "kraken": {
+    "domain": [
+      "kraken.com"
+    ]
+  },
+  "kucoin": {
+    "domain": [
+      "kucoin.com"
+    ]
+  },
+  "mexc": {
+    "domain": [
+      "mexc.com"
+    ]
+  },
+  "moonpay": {
+    "domain": [
+      "moonpay.com"
+    ]
+  },
+  "okx": {
+    "domain": [
+      "okx.com"
+    ]
+  },
+  "primexbt": {
+    "domain": [
+      "primexbt.com"
+    ]
+  }
+}
