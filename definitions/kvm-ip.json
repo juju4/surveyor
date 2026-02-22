@@ -1,0 +1,23 @@
+{
+  "jetkvm": {
+    "domain": [
+      "jetkvm.com"
+    ]
+  },
+  "nanokvm": {
+    "domain": [
+      "sipeed.com",
+      "spcom.github.io"
+    ]
+  },
+  "picokvm": {
+    "domain": [
+      "luckfox.com"
+    ]
+  },
+  "pikvm": {
+    "domain": [
+      "pikvm.org"
+    ]
+  }
+}
