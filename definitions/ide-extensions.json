@@ -1,0 +1,16 @@
+{
+  "Eclipse": {
+    "domain": [
+      "marketplace.eclipse.org",
+      "update.eclemma.org",
+      "download.eclipse.org"
+    ]
+  },
+  "MsVSCodeExtensions": {
+    "domain": [
+      "marketplace.visualstudio.com",
+      "gallery.vsassets.io",
+      "gallerycdn.vsassets.io"
+    ]
+  }
+}
