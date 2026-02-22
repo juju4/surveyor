@@ -1,0 +1,216 @@
+{
+  "BTunnels": {
+    "domain": [
+      "btunnel.co.in",
+      "btunnel.in"
+    ]
+  },
+  "Beeceptor": {
+    "domain": [
+      "beeceptor.com"
+    ]
+  },
+  "Bore": {
+    "domain": [
+      "bore.pub"
+    ]
+  },
+  "Burrow": {
+    "domain": [
+      "burrow.io",
+      "burrow.link"
+    ]
+  },
+  "Cloudflared": {
+    "domain": [
+      "trycloudflare.com",
+      "cfargotunnel.com",
+      "cftunnel.com"
+    ]
+  },
+  "Dataplicity": {
+    "domain": [
+      "dataplicity.com"
+    ]
+  },
+  "Dev Tunnels": {
+    "domain": [
+      "devtunnels.ms",
+      "data.rel.tunnels.api.visualstudio.com",
+      "rel.tunnels.api.visualstudio.com",
+      "global.rel.tunnels.api.visualstudio.com"
+    ]
+  },
+  "Expose": {
+    "domain": [
+      "sharedwithexpose.com"
+    ]
+  },
+  "Expose.sh": {
+    "domain": [
+      "expose.sh",
+      "expos.es"
+    ]
+  },
+  "Gsocket": {
+    "domain": [
+      "gsocket.io"
+    ]
+  },
+  "JPRQ": {
+    "domain": [
+      "jprq.io"
+    ]
+  },
+  "LocalTunnels": {
+    "domain": [
+      "loca.lt",
+      "localtunnel.me"
+    ]
+  },
+  "LocalXpose": {
+    "domain": [
+      "localxpose.io"
+    ]
+  },
+  "LocaltoNet": {
+    "domain": [
+      "localto.net",
+      "localtonet.com"
+    ]
+  },
+  "Loophole": {
+    "domain": [
+      "loophole.eu.auth0.com",
+      "loophole.site"
+    ]
+  },
+  "Nebula": {
+    "cmdline": [
+      "nebula"
+    ],
+    "process_name": [
+      "nebula",
+      "nebula-cert"
+    ]
+  },
+  "Netbird": {
+    "cmdline": [
+      "netbird"
+    ],
+    "process_name": [
+      "netbird"
+    ]
+  },
+  "OpenPort": {
+    "domain": [
+      "openport.io"
+    ]
+  },
+  "PageKite": {
+    "domain": [
+      "pagekite.net",
+      "pagekite.me"
+    ]
+  },
+  "PiTunnel": {
+    "domain": [
+      "*pitunnel.com"
+    ]
+  },
+  "Pinggy": {
+    "domain": [
+      "pinggy.io",
+      "pinggy.link"
+    ]
+  },
+  "Qsocket": {
+    "domain": [
+      "qsocket.io"
+    ]
+  },
+  "Rust LocalTunnels": {
+    "domain": [
+      "loca.lt",
+      "localtunnel.me"
+    ]
+  },
+  "Serveo": {
+    "domain": [
+      "serveo.net"
+    ]
+  },
+  "ShellHub": {
+    "domain": [
+      "shellhub.io*"
+    ]
+  },
+  "StaqLab": {
+    "domain": [
+      "tunnel.staqlab.com",
+      "staqlab-tunnel.com",
+      "staqlab.com"
+    ]
+  },
+  "Tailscale": {
+    "domain": [
+      "tailscale.com"
+    ]
+  },
+  "Telebit": {
+    "domain": [
+      "get.telebit.io",
+      "telebit.io",
+      "telebit.cloud",
+      "telebit.fun"
+    ]
+  },
+  "Tmate": {
+    "domain": [
+      "tmate.io"
+    ]
+  },
+  "TunnelTo": {
+    "domain": [
+      "tuns.sh",
+      "ssi.sh",
+      "tunnelto.dev"
+    ]
+  },
+  "VSCode CLI": {
+    "domain": [
+      "devtunnels.ms",
+      "tunnels.api.visualstudio.com"
+    ]
+  },
+  "VSCode GUI": {
+    "domain": [
+      "devtunnels.ms",
+      "tunnels.api.visualstudio.com"
+    ]
+  },
+  "jkuri Bore": {
+    "domain": [
+      "bore.digital"
+    ]
+  },
+  "localhost.run": {
+    "domain": [
+      "localhost.run"
+    ]
+  },
+  "ngrok": {
+    "domain": [
+      "ngrok.com",
+      "ngrok.io",
+      "ngrok.dev",
+      "ngrok.app",
+      "ngrok.pro",
+      "ngrok.pizza",
+      "ngrok-agent.com",
+      "ngrok-free.app",
+      "ngrok-cname.come",
+      "equinox.io"
+    ]
+  }
+}
