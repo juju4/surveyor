@@ -1,0 +1,25 @@
+{
+  "ControlIO": {
+    "domain": [
+      "controlio.net"
+    ]
+  },
+  "HubStaff": {
+    "domain": [
+      "hubstaff.com"
+    ]
+  },
+  "NetMonitor": {
+    "cmdline": [
+      "nmemplpro.exe",
+      "winpty-agent.exe"
+    ],
+    "digsig_publisher": [
+      "EduIQ d.o.o."
+    ],
+    "domain": [
+      "networklookout.com",
+      "eduiq.com"
+    ]
+  }
+}
