@@ -1,0 +1,22 @@
+{
+  "chatgpt-atlas": {
+    "cmdline": [
+      "ChatGPT Atlas",
+      "ChatGPT.exe",
+      "codex.exe"
+    ]
+  },
+  "comet": {
+    "cmdline": [
+      "comet.exe"
+    ],
+    "domain": [
+      "comet.perplexity.ai"
+    ]
+  },
+  "fellou": {
+    "cmdline": [
+      "fellou.exe"
+    ]
+  }
+}
