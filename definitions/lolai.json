@@ -1,0 +1,64 @@
+{
+  "copilot": {
+    "cmdline": [
+      "copilot"
+    ]
+  },
+  "cursor-ai": {
+    "cmdline": [
+      "cursor"
+    ],
+    "domain": [
+      "api.cursor.sh",
+      "registry.cursor.sh",
+      "cdn.cursor.sh"
+    ]
+  },
+  "google-antigravity": {
+    "cmdline": [
+      "antigravity"
+    ],
+    "domain": [
+      "antigravity.google.com"
+    ]
+  },
+  "jetbrains-junie": {
+    "cmdline": [
+      "jetbrains",
+      "idea",
+      "pom.xml"
+    ]
+  },
+  "n8n-workflow": {
+    "cmdline": [
+      "n8n"
+    ]
+  },
+  "openai-codex": {
+    "cmdline": [
+      "codex"
+    ]
+  },
+  "openinterpreter": {
+    "cmdline": [
+      "openinterpreter",
+      "open-interpreter",
+      "open_interpreter",
+      "interpreter"
+    ]
+  },
+  "warp": {
+    "cmdline": [
+      "warp",
+      "warp-terminal",
+      "warp agent"
+    ],
+    "domain": [
+      "api.warp.dev"
+    ],
+    "process_name": [
+      "warp",
+      "warp-terminal"
+    ]
+  }
+}
