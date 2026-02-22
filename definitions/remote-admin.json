@@ -860,6 +860,15 @@
       "naverisk.com"
     ]
   },
+  "Nebula": {
+    "cmdline": [
+      "nebula"
+    ],
+    "process_name": [
+      "nebula",
+      "nebula-cert"
+    ]
+  },
   "NetSupport Manager": {
     "digsig_publisher": [
       "NetSupport Ltd"
@@ -873,6 +882,14 @@
     "process_name": [
       "client32.exe",
       "pcictlui.exe"
+    ]
+  },
+  "Netbird": {
+    "cmdline": [
+      "netbird"
+    ],
+    "process_name": [
+      "netbird"
     ]
   },
   "Netop Remote Control (aka Impero Connect)": {
