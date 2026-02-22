@@ -23,6 +23,51 @@
       "mlflow.org"
     ]
   },
+  "nanobot": {
+    "cmdline": [
+      "nanobot",
+      "nanobot-ai"
+    ],
+    "process_name": [
+      "nanobot"
+    ]
+  },
+  "nanoclaw": {
+    "cmdline": [
+      "nanoclaw"
+    ],
+    "domain": [
+      "nanoclaw.dev"
+    ],
+    "process_name": [
+      "claude"
+    ]
+  },
+  "openclaw": {
+    "cmdline": [
+      "openclaw",
+      "molt"
+    ],
+    "domain": [
+      "openclaw.ai"
+    ],
+    "process_name": [
+      "openclaw.exe",
+      "openclaw.cmd"
+    ]
+  },
+  "picoclaw": {
+    "cmdline": [
+      "picoclaw"
+    ],
+    "domain": [
+      "picoclaw.io"
+    ],
+    "process_name": [
+      "picoclaw.exe",
+      "picoclaw"
+    ]
+  },
   "ray.io": {
     "cmdline": [
       "gcs_server",
@@ -39,6 +84,14 @@
     "process_name": [
       "gcs_server",
       "raylet"
+    ]
+  },
+  "zeroclaw": {
+    "cmdline": [
+      "zeroclaw"
+    ],
+    "process_name": [
+      "zeroclaw"
     ]
   }
 }
