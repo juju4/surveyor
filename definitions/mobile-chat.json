@@ -1,0 +1,27 @@
+{
+  "Signal": {
+    "domain": [
+      "signal.org"
+    ],
+    "process_name": [
+      "signal.exe"
+    ]
+  },
+  "Telegram": {
+    "domain": [
+      "telegram.org"
+    ],
+    "process_name": [
+      "telegram.exe"
+    ]
+  },
+  "WhatsApp": {
+    "domain": [
+      "whatsapp.com",
+      "whatsapp.net"
+    ],
+    "process_name": [
+      "whatsapp.exe"
+    ]
+  }
+}
