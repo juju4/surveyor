@@ -1,0 +1,28 @@
+{
+  "velociraptor": {
+    "cmdline": [
+      "triage",
+      "collector",
+      "velociraptor.exe",
+      "--config client.config.yaml",
+      "service run"
+    ],
+    "domain": [
+      "velociraptor.app",
+      "www.velocidex.com"
+    ],
+    "regmod": [
+      "SYSTEM\\CurrentControlSet\\Services\\EventLog\\Application\\Velociraptor"
+    ]
+  },
+  "volatility": {
+    "cmdline": [
+      "vol.exe",
+      "vol.py",
+      "volatility"
+    ],
+    "domain": [
+      "volatilityfoundation.org"
+    ]
+  }
+}
