@@ -18,6 +18,23 @@
       "cscript.exe"
     ]
   },
+  "Deno": {
+    "cmdline": [
+      "deno.exe -A data:application/javascript:",
+      "deno compile",
+      "deno eval",
+      "deno run"
+    ],
+    "digsig_publisher": [
+      "Deno Land Inc"
+    ],
+    "filemod": [
+      "deno\\remote\\https"
+    ],
+    "process_name": [
+      "deno.exe"
+    ]
+  },
   "Diskshadow": {
     "process_name": [
       "diskshadow.exe"
