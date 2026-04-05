@@ -1609,9 +1609,6 @@
     ]
   },
   "WebRDP": {
-    "domain": [
-      "github.com"
-    ],
     "process_name": [
       "webrdp.exe"
     ]
@@ -1698,17 +1695,14 @@
     ]
   },
   "rdp2tcp": {
-    "domain": [
-      "github.com"
-    ],
     "process_name": [
       "tdp2tcp.exe",
       "rdp2tcp.py"
     ]
   },
   "rdpwrap": {
-    "domain": [
-      "github.com"
+    "process_name": [
+      "rdpwrap"
     ]
   }
 }
