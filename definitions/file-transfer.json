@@ -1,4 +1,49 @@
 {
+  "AwsCli": {
+    "cmdline": [
+      "s3 cp",
+      "s3 mv",
+      "s3 sync",
+      "--recursive",
+      "--quiet",
+      "--endpoint-url",
+      "--exclude",
+      "--include"
+    ],
+    "domain": [
+      "s3.amazonaws.com",
+      "s3-accelerate.amazonaws.com"
+    ],
+    "process_name": [
+      "aws"
+    ]
+  },
+  "AzCopy": {
+    "cmdline": [
+      "--recursive=true"
+    ],
+    "filemod": [
+      ".azcopy"
+    ],
+    "process_name": [
+      "azcopy"
+    ]
+  },
+  "Curl": {
+    "cmdline": [
+      "--data",
+      "--data-binary",
+      "--upload-file",
+      "--request",
+      "--header",
+      "--form",
+      "--proxy",
+      "--user-agent"
+    ],
+    "process_name": [
+      "curl.exe"
+    ]
+  },
   "CyberDuck": {
     "process_name": [
       "cyberduck"
@@ -18,11 +63,27 @@
       "filezilla"
     ]
   },
+  "Goodsync": {
+    "filemod": [
+      "AppData\\Local\\GoodSync"
+    ],
+    "process_name": [
+      "goodsync.exe",
+      "gsync.exe"
+    ],
+    "regmod": [
+      "SYSTEM\\CurrentControlSet\\Services\\GsServer"
+    ]
+  },
   "SCP": {
     "process_name": [
       "pscp.exe",
       "scp.exe",
       "winscp.exe"
+    ],
+    "regmod": [
+      "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\winscp3_is1",
+      "SOFTWARE\\Martin Prikryl\\WinSCP 2\\Configuration\\Interface\\Commander\\"
     ]
   },
   "SFTP": {
@@ -31,9 +92,49 @@
       "sftp"
     ]
   },
+  "megatools": {
+    "cmdline": [
+      "megatools put",
+      "megatools copy"
+    ],
+    "filemod": [
+      "megatools.cache"
+    ],
+    "process_name": [
+      "megatools.exe"
+    ]
+  },
   "pushd": {
     "process_name": [
       "pushd.exe"
+    ]
+  },
+  "rclone": {
+    "cmdline": [
+      "copy",
+      "mega",
+      "pcloud",
+      "\u2013ignore-existing",
+      "\u2013auto-confirm",
+      "--no-check-certificate",
+      "--transfers",
+      "--multi-thread-streams"
+    ],
+    "process_name": [
+      "rclone.exe"
+    ]
+  },
+  "restic": {
+    "cmdline": [
+      "--repo",
+      "init",
+      "backup",
+      "--password-file",
+      "forget",
+      "prune"
+    ],
+    "process_name": [
+      "restic.exe"
     ]
   },
   "robocopy": {
