@@ -21,6 +21,7 @@ from tqdm import tqdm
 from common import Tag, Result, sigma_translation
 from help import log_echo
 from load import get_product_instance, get_products
+from exception_filter import ExceptionMatcher
 
 
 CONTEXT_SETTINGS = dict(help_option_names=["-h", "--help", "-what-am-i-doing"])
@@ -58,6 +59,8 @@ def _write_results(
     tag: Tag,
     log: logging.Logger,
     use_tqdm: bool = False,
+    exception_matcher: Optional[ExceptionMatcher] = None,
+    exception_marker: str = "EXCEPTION",
 ) -> None:
     """
     Helper function for writing search results to CSV or STDOUT.
@@ -86,6 +89,15 @@ def _write_results(
         ]
 
         if output:
+            is_exc = False
+            if exception_matcher is not None:
+                is_exc = exception_matcher.is_exception(
+                    hostname=result.hostname,
+                    username=result.username,
+                )
+            exception_value = exception_marker if is_exc else ""
+            row.append(exception_value)
+
             if result.other_data:
                 row.extend(result.other_data)
 
@@ -120,6 +132,8 @@ class ExecutionOptions:
     no_progress: bool
     log_dir: str
     product_args: dict
+    exception_csv: Tuple[str, ...]
+    exception_marker: str
 
 
 # noinspection SpellCheckingInspection
@@ -198,6 +212,23 @@ class ExecutionOptions:
 @click.option(
     "--no-progress", help="Suppress progress bar", is_flag=True, default=False
 )
+@click.option(
+    "--exception-csv",
+    "exception_csv",
+    multiple=True,
+    type=click.Path(exists=True, dir_okay=False, readable=True),
+    help=(
+        "Path to exception CSV (AD group export or custom format). "
+        "Can be specified multiple times."
+    ),
+)
+@click.option(
+    "--exception-marker",
+    "exception_marker",
+    default="EXCEPTION",
+    show_default=True,
+    help="Marker string written in the 'exception' column for matched rows.",
+)
 # version option
 @click.version_option(current_version)
 # logging options
@@ -228,6 +259,8 @@ def cli(
     no_progress: bool,
     sigma_rule: Optional[str],
     sigma_dir: Optional[str],
+    exception_csv: Tuple[str, ...],
+    exception_marker: str,
     log_dir: str,
 ) -> None:
 
@@ -252,6 +285,8 @@ def cli(
         no_progress,
         log_dir,
         dict(),
+        exception_csv,
+        exception_marker,
     )
 
     if ctx.invoked_subcommand is None:
@@ -392,6 +427,10 @@ def survey(ctx, product_str: str = "cbr") -> None:
     if opt.sigma_dir and not os.path.isdir(opt.sigma_dir):
         ctx.fail("Supplied --sigmadir is not a directory")
 
+    exception_matcher: Optional[ExceptionMatcher] = None
+    if opt.exception_csv:
+        exception_matcher = ExceptionMatcher.from_csv_files(opt.exception_csv)
+
     # instantiate a logger
     log = logging.getLogger("surveyor")
     logging.debug(f"Product: {product_str}")
@@ -459,6 +498,9 @@ def survey(ctx, product_str: str = "cbr") -> None:
     # default header, shared by all products
     header = ["endpoint", "username", "process_path", "cmdline", "program", "source"]
 
+    if exception_matcher is not None:
+        header.append("exception")
+
     # add any additional rows that the current product includes to header
     header.extend(product.get_other_row_headers())
 
@@ -495,7 +537,16 @@ def survey(ctx, product_str: str = "cbr") -> None:
             product.process_search(Tag("query"), base_query, opt.query)
 
             for tag, results in product.get_results().items():
-                _write_results(writer, results, opt.query, "query", tag, log)
+                _write_results(
+                    writer,
+                    results,
+                    opt.query,
+                    "query",
+                    tag,
+                    log,
+                    exception_matcher=exception_matcher,
+                    exception_marker=opt.exception_marker,
+                )
 
         # test if deffile exists
         # deffile can be resolved from 'definitions' folder without needing to specify path or extension
@@ -550,8 +601,17 @@ def survey(ctx, product_str: str = "cbr") -> None:
                     base_query,
                 )
 
-                for tag, results in product.get_results().items():
-                    _write_results(writer, results, opt.ioc_file, "ioc", tag, log)
+            for tag, results in product.get_results().items():
+                _write_results(
+                    writer,
+                    results,
+                    opt.ioc_file,
+                    "ioc",
+                    tag,
+                    log,
+                    exception_matcher=exception_matcher,
+                    exception_marker=opt.exception_marker,
+                )
 
         # run search against definition files and write to csv
         if opt.def_file is not None or opt.def_dir is not None:
@@ -572,9 +632,10 @@ def survey(ctx, product_str: str = "cbr") -> None:
 
                         if product.has_results():
                             # write results as they become available
-                            for tag, nested_results in product.get_results(
-                                final_call=False
-                            ).items():
+                            for (
+                                tag,
+                                nested_results,
+                            ) in product.get_results(final_call=False).items():
                                 _write_results(
                                     writer,
                                     nested_results,
@@ -583,6 +644,8 @@ def survey(ctx, product_str: str = "cbr") -> None:
                                     tag,
                                     log,
                                     use_tqdm=True,
+                                    exception_matcher=exception_matcher,
+                                    exception_marker=opt.exception_marker,
                                 )
 
                             # ensure results are only written once
@@ -590,7 +653,16 @@ def survey(ctx, product_str: str = "cbr") -> None:
 
             # write any remaining results
             for tag, nested_results in product.get_results().items():
-                _write_results(writer, nested_results, tag.tag, str(tag.data), tag, log)
+                _write_results(
+                    writer,
+                    nested_results,
+                    tag.tag,
+                    str(tag.data),
+                    tag,
+                    log,
+                    exception_matcher=exception_matcher,
+                    exception_marker=opt.exception_marker,
+                )
 
         # if there's sigma rules to be processed
         if len(sigma_rules) > 0:
@@ -627,6 +699,8 @@ def survey(ctx, product_str: str = "cbr") -> None:
                             tag,
                             log,
                             use_tqdm=True,
+                            exception_matcher=exception_matcher,
+                            exception_marker=opt.exception_marker,
                         )
 
                     # ensure results are only written once
@@ -634,7 +708,16 @@ def survey(ctx, product_str: str = "cbr") -> None:
 
             # write any remaining results
             for tag, nested_results in product.get_results().items():
-                _write_results(writer, nested_results, tag.tag, str(tag.data), tag, log)
+                _write_results(
+                    writer,
+                    nested_results,
+                    tag.tag,
+                    str(tag.data),
+                    tag,
+                    log,
+                    exception_matcher=exception_matcher,
+                    exception_marker=opt.exception_marker,
+                )
 
         if output_file:
             log_echo(f"\033[95mResults saved: {output_file.name}\033[0m", log)
