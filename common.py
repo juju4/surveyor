@@ -32,7 +32,10 @@ class Product(ABC):
 
     Subclasses must implement all abstract methods and invoke this class's constructor.
     """
-    product: Optional[str] = None  # a string describing the product (e.g. cbr/cbth/defender/s1)
+
+    product: Optional[str] = (
+        None  # a string describing the product (e.g. cbr/cbth/defender/s1)
+    )
     profile: str  # the profile is used to authenticate to the target platform
     _results: dict[Tag, list[Result]]
     log: logging.Logger
@@ -43,16 +46,16 @@ class Product(ABC):
         self.product = product
         self._tqdm_echo = tqdm_echo
 
-        self.log = logging.getLogger(f'surveyor.{self.product}')
+        self.log = logging.getLogger(f"surveyor.{self.product}")
 
         if not self.profile:
-            self.profile = 'default'
+            self.profile = "default"
 
         self._results = dict()
 
-        self.log.debug(f'Authenticating to {self.product}')
+        self.log.debug(f"Authenticating to {self.product}")
         self._authenticate()
-        self.log.debug(f'Authenticated')
+        self.log.debug("Authenticated")
 
     @abstractmethod
     def _authenticate(self) -> None:
@@ -125,7 +128,7 @@ class Product(ABC):
         Add results to the result store.
         """
         if not tag:
-            tag = Tag('_default')
+            tag = Tag("_default")
 
         if tag not in self._results:
             self._results[tag] = list()
@@ -137,6 +140,7 @@ class Product(ABC):
         Write a message to STDOUT and the debug log stream.
         """
         log_echo(message, self.log, level, use_tqdm=self._tqdm_echo)
+
 
 def sigma_translation(product: str, sigma_rules: list, pq: bool = False) -> dict:
     """
@@ -158,67 +162,90 @@ def sigma_translation(product: str, sigma_rules: list, pq: bool = False) -> dict
     supports_json_ouput = True
 
     try:
-        from sigma.collection import SigmaCollection # type: ignore
-        from sigma.plugins import SigmaPluginDirectory # type: ignore
+        from sigma.collection import SigmaCollection  # type: ignore
+        from sigma.plugins import SigmaPluginDirectory  # type: ignore
+
         plugins = SigmaPluginDirectory.default_plugin_directory()
     except Exception as e:
         raise e
 
-    if product in ('cbr','cbc'):
-        plugins.get_plugin_by_id('carbonblack').install()
-        from sigma.backends.carbonblack import CarbonBlackBackend # type: ignore
+    if product in ("cbr", "cbc"):
+        plugins.get_plugin_by_id("carbonblack").install()
+        from sigma.backends.carbonblack import CarbonBlackBackend  # type: ignore
 
-        if product == 'cbr':
-            from sigma.pipelines.carbonblack import CarbonBlackResponse_pipeline as cb_pipeline # type: ignore
+        if product == "cbr":
+            from sigma.pipelines.carbonblack import (
+                CarbonBlackResponse_pipeline as cb_pipeline,
+            )  # type: ignore
         else:
-            from sigma.pipelines.carbonblack import CarbonBlack_pipeline as cb_pipeline # type: ignore
+            from sigma.pipelines.carbonblack import CarbonBlack_pipeline as cb_pipeline  # type: ignore
 
         backend = CarbonBlackBackend(cb_pipeline())
-    elif product == 's1':
+    elif product == "s1":
         if pq:
-            plugins.get_plugin_by_id('sentinelone-pq').install()
-            from sigma.backends.sentinelone_pq import SentinelOnePQBackend # type: ignore
+            plugins.get_plugin_by_id("sentinelone-pq").install()
+            from sigma.backends.sentinelone_pq import SentinelOnePQBackend  # type: ignore
+
             backend = SentinelOnePQBackend()
         else:
-            plugins.get_plugin_by_id('sentinelone').install()
-            from sigma.backends.sentinelone import SentinelOneBackend # type: ignore
+            plugins.get_plugin_by_id("sentinelone").install()
+            from sigma.backends.sentinelone import SentinelOneBackend  # type: ignore
+
             backend = SentinelOneBackend()
-    elif product == 'dfe':
+    elif product == "dfe":
         supports_json_ouput = False
-        plugins.get_plugin_by_id('microsoft365defender').install()
-        from sigma.backends.kusto import KustoBackend # type: ignore
-        from sigma.pipelines.microsoft365defender import microsoft_365_defender_pipeline # type: ignore
+        plugins.get_plugin_by_id("microsoft365defender").install()
+        from sigma.backends.kusto import KustoBackend  # type: ignore
+        from sigma.pipelines.microsoft365defender import microsoft_365_defender_pipeline  # type: ignore
+
         backend = KustoBackend(microsoft_365_defender_pipeline())
-    elif product == 'cortex':
-        plugins.get_plugin_by_id('cortexxdr').install()
-        from sigma.backends.cortexxdr import CortexXDRBackend # type: ignore
+    elif product == "cortex":
+        plugins.get_plugin_by_id("cortexxdr").install()
+        from sigma.backends.cortexxdr import CortexXDRBackend  # type: ignore
+
         backend = CortexXDRBackend()
 
     are_files = [os.path.isfile(i) for i in sigma_rules]
 
-    if all(are_files): # if all items in the list are files
+    if all(are_files):  # if all items in the list are files
         if product == "dfe":
-            rule_collection = [SigmaCollection.load_ruleset([i]) for i in sigma_rules] # load each file as a separate rule collection for DFE
+            rule_collection = [
+                SigmaCollection.load_ruleset([i]) for i in sigma_rules
+            ]  # load each file as a separate rule collection for DFE
         else:
-            rule_collection = SigmaCollection.load_ruleset(sigma_rules) # type: ignore
-    elif not any(are_files): # if none of the items in the list are files, assume YML formatted strings
-        if product == 'dfe':
-            rule_collection = [SigmaCollection.from_yaml(i) for i in sigma_rules] # load each YML string as a separate rule collection for DFE
+            rule_collection = SigmaCollection.load_ruleset(sigma_rules)  # type: ignore
+    elif not any(
+        are_files
+    ):  # if none of the items in the list are files, assume YML formatted strings
+        if product == "dfe":
+            rule_collection = [
+                SigmaCollection.from_yaml(i) for i in sigma_rules
+            ]  # load each YML string as a separate rule collection for DFE
         else:
-            rule_collection = SigmaCollection.merge([SigmaCollection.from_yaml(i) for i in sigma_rules]) # type: ignore
+            rule_collection = SigmaCollection.merge(
+                [SigmaCollection.from_yaml(i) for i in sigma_rules]
+            )  # type: ignore
     else:
-        logging.error("There appears to be a mix of files and YML strings. Cannot process a mixed list of values. Aborting.")
-        return {'queries': []}
+        logging.error(
+            "There appears to be a mix of files and YML strings. Cannot process a mixed list of values. Aborting."
+        )
+        return {"queries": []}
 
     if supports_json_ouput:
-        return backend.convert(rule_collection, "json") # type: ignore
+        return backend.convert(rule_collection, "json")  # type: ignore
     else:
-        results: dict = {"queries":[]}
+        results: dict = {"queries": []}
         for r in rule_collection:
-            results['queries'].append({
-                'query': backend.convert_rule(r)[0] if product != 'dfe' else backend.convert(r)[0], # type: ignore
-                'id': r.id if product != 'dfe' else r.rules[0].id, # type: ignore
-                'title': r.title if product != 'dfe' else r.rules[0].title, # type: ignore
-                'description': r.description if product != 'dfe' else r.rules[0].description # type: ignore
-            })
+            results["queries"].append(
+                {
+                    "query": backend.convert_rule(r)[0]
+                    if product != "dfe"
+                    else backend.convert(r)[0],  # type: ignore
+                    "id": r.id if product != "dfe" else r.rules[0].id,  # type: ignore
+                    "title": r.title if product != "dfe" else r.rules[0].title,  # type: ignore
+                    "description": r.description
+                    if product != "dfe"
+                    else r.rules[0].description,  # type: ignore
+                }
+            )
         return results

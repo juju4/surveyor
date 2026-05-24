@@ -10,37 +10,37 @@ def read(fname):
 
 def find_scripts():
     scripts = []
-    exclude = ['setup.py']
-    for file in os.scandir('.'):
-        if file.name.endswith('.py') and file.is_file() and (file.name not in exclude):
+    exclude = ["setup.py"]
+    for file in os.scandir("."):
+        if file.name.endswith(".py") and file.is_file() and (file.name not in exclude):
             scripts.append(file.name)
     return scripts
 
 
 setup(
-    name='surveyor',
-    author='Keith McCammon',
-    author_email='keith@redcanary.com',
-    url='https://github.com/redcanaryco/surveyor',
-    license='MIT',
+    name="surveyor",
+    author="Keith McCammon",
+    author_email="keith@redcanary.com",
+    url="https://github.com/redcanaryco/surveyor",
+    license="MIT",
     packages=find_packages(),
     scripts=find_scripts(),
-    description='Extracts summarized process data from EDR platforms',
-    version='2.5.0',
+    description="Extracts summarized process data from EDR platforms",
+    version="2.5.0",
     classifiers=[
-        'Development Status :: 5 - Production/Stable',
-        'Intended Audience :: Developers',
-        'License :: Freely Distributable',
-        'License :: OSI Approved :: MIT License',
-        'Operating System :: OS Independent',
-        'Programming Language :: Python',
+        "Development Status :: 5 - Production/Stable",
+        "Intended Audience :: Developers",
+        "License :: Freely Distributable",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python",
     ],
     install_requires=[
-        'cbapi==2.0.0', 'click', 'requests', 'tqdm', 'carbon-black-cloud-sdk'
+        "cbapi==2.0.0",
+        "click",
+        "requests",
+        "tqdm",
+        "carbon-black-cloud-sdk",
     ],
-    extras_require={
-        "sigma": [
-            "pysigma>=0.9.5"
-        ]
-    }
+    extras_require={"sigma": ["pysigma>=0.9.5"]},
 )
