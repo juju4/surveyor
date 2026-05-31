@@ -1528,6 +1528,21 @@
       "ptdskhost.exe"
     ]
   },
+  "Tiflux": {
+    "digsig_publisher": [
+      "Tiflux Sistema de Gest\u00e3o LTDA"
+    ],
+    "domain": [
+      "remoteid.tiflux.com"
+    ],
+    "process_name": [
+      "si.exe",
+      "TiAgent.exe",
+      "TiPeerToPeer.exe",
+      "TiService.exe",
+      "TiUpdateService.exe"
+    ]
+  },
   "TightVNC": {
     "digsig_publisher": [
       "GlavSoft LLC.",
