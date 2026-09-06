@@ -377,6 +377,21 @@
       "ericomconnnectconfigurationtool.exe"
     ]
   },
+  "Faronics": {
+    "domain": [
+      "deploy.faronics.com",
+      "faronics.com"
+    ],
+    "filemod": [
+      "ScriptRunner.log"
+    ],
+    "internal_name": [
+      "Faronics"
+    ],
+    "process_name": [
+      "faronics"
+    ]
+  },
   "FastViewer": {
     "domain": [
       "fastviewer.com"
