@@ -1,4 +1,12 @@
 {
+  "audiovideo": {
+    "domain": [
+      "mictests.com",
+      "webcammictest.com",
+      "onlinemictest.com",
+      "vdo.ninja"
+    ]
+  },
   "jetkvm": {
     "domain": [
       "jetkvm.com"
