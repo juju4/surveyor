@@ -77,6 +77,14 @@
       "shareit.exe"
     ]
   },
+  "Toffeeshare": {
+    "domain": [
+      "toffeshare.com"
+    ],
+    "process_name": [
+      "toffeeshare"
+    ]
+  },
   "Viivo": {
     "process_name": [
       "viivo.exe"
